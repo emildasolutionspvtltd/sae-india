@@ -21,11 +21,6 @@
             aspect-ratio: 16 / 9;
         }</style></head>
 <body>
-  <div class="intro-wrapper">
-    <div class="intro">
-      <div class="intro_contents"><img src="{{ images.-191a2695.url }}" loading="lazy" sizes="(max-width: 479px) 60vw, (max-width: 767px) 40vw, (max-width: 991px) 30vw, 20vw" alt="{{ images.-191a2695.alt | escape }}" class="intro-image"></div>
-    </div>
-  </div>
   <div class="over_flow_hider">
     <div class="intro-wrapper">
       <div class="intro">
@@ -136,7 +131,7 @@
                 {%- unless collection.length == 0 -%}<div role="list" class="collection-list-16 w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.url }}" class="tapestry_separate_holder w-inline-block">
-                      <div class="tapestry__image__livingroom" style="background-image: url('{{item.data.f_image-1.url}}');"><img src="{{ item.data.f_home-featured-product-picture.url }}" loading="lazy" alt="{{ images.317f733b.alt | escape }}" class="home_product_imag"></div>
+                      <div class="tapestry__image__livingroom"><img src="{{ item.data.f_home-featured-product-picture.url }}" loading="lazy" alt="{{ images.317f733b.alt | escape }}" class="home_product_imag"></div>
                       <h4 class="tapestry__image__caption">{{ item.data.title }}</h4>
                     </a>
                   </div>{%- endfor -%}
